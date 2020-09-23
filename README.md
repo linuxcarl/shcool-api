@@ -62,6 +62,8 @@ This project uses a number of open source package to work properly:
 
 - [Express](http://expressjs.com/) - fast node.js network app framework [@tjholowaychuk]
 
+- [Awilix](https://www.npmjs.com/package/awilix) - Extremely powerful Dependency Injection (DI) container for JavaScript/Node, written in TypeScript.
+
 - [tslint](https://eslint.org/) - Find and fix problems in your TypeScript code.
 
 - [Prettier](https://prettier.io/) - An opinionated code formatter.
