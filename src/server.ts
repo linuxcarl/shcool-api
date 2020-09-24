@@ -8,26 +8,26 @@ export class Server {
   #port: number = Number(Config.init().api().port);
   #app!: express.Application;
 
-  public indexRoutes!: IndexRoute;
+  #indexRoutes!: IndexRoute;
 
   constructor() {
     this.createApp();
     this.configApp();
-    this.indexRoutes = new IndexRoute(this.#app);
+    this.#indexRoutes = new IndexRoute(this.#app);
     this.runServer();
   }
   public getApp(): express.Application {
     return this.#app;
   }
-  protected createApp(): void {
+  private createApp(): void {
     this.#app = express();
   }
-  protected configApp(): void {
+  private configApp(): void {
     this.#app.use(express.json());
     this.#app.use(cors());
     this.#app.use(helmet());
   }
-  protected runServer(): void {
+  private runServer(): void {
     this.#app.listen(this.#port, () =>
       console.log('Server running in the port %s', this.#port)
     );

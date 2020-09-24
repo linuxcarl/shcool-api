@@ -2,9 +2,9 @@
   "name": "school-api",
   "version": "1.0.0",
   "description": "API by school",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "tsc && nodemon ./dist/index.js",
+    "start": "tsc && nodemon ./dist/app.js",
     "dev": "npm run tslint && ts-node-dev --respawn --transpile-only ./src/app.ts",
     "tslint": "tslint --fix --project tsconfig.json",
     "prettier:base": "prettier --parser typescript --single-quote",
