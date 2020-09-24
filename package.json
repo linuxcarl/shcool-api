@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && nodemon ./dist/index.js",
-    "dev": "npm run tslint && ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "dev": "npm run tslint && ts-node-dev --respawn --transpile-only ./src/app.ts",
     "tslint": "tslint --fix --project tsconfig.json",
     "prettier:base": "prettier --parser typescript --single-quote",
     "prettier:check": "npm run prettier:base -- --list-different \"./src/**/*.{ts}\"",

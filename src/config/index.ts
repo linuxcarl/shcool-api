@@ -3,7 +3,7 @@ import { Iapi } from './interfaces/api.interface';
 dotenv.config();
 export class Config {
   private static instance: Config;
-  public static getInstance(): Config {
+  public static init(): Config {
     if (!Config.instance) {
       Config.instance = new Config();
     }
